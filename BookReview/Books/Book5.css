@@ -1,0 +1,176 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  /* navbar */
+}
+a {
+  margin: 15px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: #000;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 0 5px black;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 5%;
+}
+#navv {
+  color: black;
+  position: relative;
+  padding: 7px 0;
+}
+#navv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all 250ms ease-in-out;
+}
+#navv::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all 250ms ease-in-out;
+}
+#navv:hover:before,
+#navv:hover::after {
+  width: 100%;
+  left: 0;
+}
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+body {
+  background: url("../images/books.jpg");
+}
+/* Grids */
+.gridcontainer {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, 290px);
+  grid-auto-rows: 270px;
+  grid-gap: 20px;
+  justify-content: center;
+  background-color: #f7f7f6;
+  box-shadow: 0 0 10px black;
+}
+.gridcontainer > div {
+  height: auto;
+  width: auto;
+}
+.grid1 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.grid2 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.grid3 {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+/* Grid 1 */
+
+#img1 {
+  display: block;
+  margin: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  height: 70vh;
+}
+#img1:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 20px black;
+  text-align: center;
+}
+#paragraphs {
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+/* Grid 2 */
+.grid2q {
+  position: relative;
+  top: 30px;
+  line-height: 20px;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  text-align: end;
+  margin-right: 20px;
+}
+.grid2content {
+  margin: 50px;
+  position: relative;
+  bottom: 3%;
+  right: 7%;
+}
+/* GRID 3 */
+#name {
+  text-align: center;
+}
+#author {
+  height: 25vh;
+  border-radius: 100%;
+  position: relative;
+  bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 12px;
+}
+
+#authorname {
+  font-weight: bolder;
+  font-size: large;
+  margin-bottom: -5px;
+}
+.grid3desc {
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
